@@ -3,7 +3,10 @@ import PackageDescription
 
 let package = Package(
     name: "TimeMirrorCore",
-    platforms: [.iOS(.v17)],
+    platforms: [
+        .iOS(.v17),
+        .macOS(.v12)
+    ],
     products: [
         .library(name: "TimeMirrorCore", targets: ["TimeMirrorCore"])
     ],
