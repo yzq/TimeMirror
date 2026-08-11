@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00000000000000000000001 /* TimeMirrorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000001 /* TimeMirrorApp.swift */; };
+		D00000000000000000000002 /* PersistenceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000002 /* PersistenceModels.swift */; };
+		D00000000000000000000003 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000003 /* TimerController.swift */; };
+		D00000000000000000000004 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000004 /* AppTheme.swift */; };
+		D00000000000000000000005 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000005 /* Components.swift */; };
+		D00000000000000000000006 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000006 /* RootView.swift */; };
+		D00000000000000000000007 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000007 /* OnboardingView.swift */; };
+		D00000000000000000000008 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000008 /* TodayView.swift */; };
+		D00000000000000000000009 /* LedgerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000009 /* LedgerView.swift */; };
+		D0000000000000000000000A /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000A /* ReviewView.swift */; };
+		D0000000000000000000000B /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000B /* DirectionsView.swift */; };
+		D0000000000000000000000C /* TimeDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000001 /* TimeDomain.swift */; };
+		D0000000000000000000000D /* ReviewCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00000000000000000000002 /* ReviewCalculator.swift */; };
+		D0000000000000000000000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000C /* Assets.xcassets */; };
+		D0000000000000000000000F /* ReviewCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000D /* ReviewCalculatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		700000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100000000000000000000001;
+			remoteInfo = TimeMirror;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000001 /* TimeMirrorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeMirrorApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000002 /* PersistenceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceModels.swift; sourceTree = "<group>"; };
+		A00000000000000000000003 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		A00000000000000000000004 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		A00000000000000000000005 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		A00000000000000000000006 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A00000000000000000000007 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A00000000000000000000008 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		A00000000000000000000009 /* LedgerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000A /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000B /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0000000000000000000000D /* ReviewCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCalculatorTests.swift; sourceTree = "<group>"; };
+		B00000000000000000000001 /* TimeDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDomain.swift; sourceTree = "<group>"; };
+		B00000000000000000000002 /* ReviewCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCalculator.swift; sourceTree = "<group>"; };
+		C00000000000000000000001 /* TimeMirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeMirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00000000000000000000002 /* TimeMirrorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeMirrorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E00000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				F00000000000000000000002 /* TimeMirror */,
+				F00000000000000000000003 /* TimeMirrorCore */,
+				F00000000000000000000005 /* TimeMirrorTests */,
+				F00000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F00000000000000000000002 /* TimeMirror */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000001 /* TimeMirrorApp.swift */,
+				A00000000000000000000002 /* PersistenceModels.swift */,
+				A00000000000000000000003 /* TimerController.swift */,
+				A00000000000000000000004 /* AppTheme.swift */,
+				A00000000000000000000005 /* Components.swift */,
+				A00000000000000000000006 /* RootView.swift */,
+				A00000000000000000000007 /* OnboardingView.swift */,
+				A00000000000000000000008 /* TodayView.swift */,
+				A00000000000000000000009 /* LedgerView.swift */,
+				A0000000000000000000000A /* ReviewView.swift */,
+				A0000000000000000000000B /* DirectionsView.swift */,
+				A0000000000000000000000C /* Assets.xcassets */,
+			);
+			path = TimeMirror;
+			sourceTree = "<group>";
+		};
+		F00000000000000000000003 /* TimeMirrorCore */ = {
+			isa = PBXGroup;
+			children = (
+				B00000000000000000000001 /* TimeDomain.swift */,
+				B00000000000000000000002 /* ReviewCalculator.swift */,
+			);
+			path = Sources/TimeMirrorCore;
+			sourceTree = "<group>";
+		};
+		F00000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000001 /* TimeMirror.app */,
+				C00000000000000000000002 /* TimeMirrorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F00000000000000000000005 /* TimeMirrorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000000D /* ReviewCalculatorTests.swift */,
+			);
+			path = Tests/TimeMirrorCoreTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000001 /* TimeMirror */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200000000000000000000002 /* Build configuration list for PBXNativeTarget "TimeMirror" */;
+			buildPhases = (
+				300000000000000000000001 /* Sources */,
+				E00000000000000000000001 /* Frameworks */,
+				400000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeMirror;
+			productName = TimeMirror;
+			productReference = C00000000000000000000001 /* TimeMirror.app */;
+			productType = "com.apple.product-type.application";
+		};
+		100000000000000000000002 /* TimeMirrorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200000000000000000000003 /* Build configuration list for PBXNativeTarget "TimeMirrorTests" */;
+			buildPhases = (
+				300000000000000000000002 /* Sources */,
+				E00000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				800000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = TimeMirrorTests;
+			productName = TimeMirrorTests;
+			productReference = C00000000000000000000002 /* TimeMirrorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					100000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					100000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 100000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 200000000000000000000001 /* Build configuration list for PBXProject "TimeMirror" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = zh-Hans;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = F00000000000000000000001;
+			productRefGroup = F00000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000001 /* TimeMirror */,
+				100000000000000000000002 /* TimeMirrorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		400000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0000000000000000000000E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		300000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00000000000000000000001 /* TimeMirrorApp.swift in Sources */,
+				D00000000000000000000002 /* PersistenceModels.swift in Sources */,
+				D00000000000000000000003 /* TimerController.swift in Sources */,
+				D00000000000000000000004 /* AppTheme.swift in Sources */,
+				D00000000000000000000005 /* Components.swift in Sources */,
+				D00000000000000000000006 /* RootView.swift in Sources */,
+				D00000000000000000000007 /* OnboardingView.swift in Sources */,
+				D00000000000000000000008 /* TodayView.swift in Sources */,
+				D00000000000000000000009 /* LedgerView.swift in Sources */,
+				D0000000000000000000000A /* ReviewView.swift in Sources */,
+				D0000000000000000000000B /* DirectionsView.swift in Sources */,
+				D0000000000000000000000C /* TimeDomain.swift in Sources */,
+				D0000000000000000000000D /* ReviewCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0000000000000000000000F /* ReviewCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		800000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100000000000000000000001 /* TimeMirror */;
+			targetProxy = 700000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		500000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		500000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		500000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "时镜";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timemirror.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		500000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "时镜";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timemirror.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		500000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timemirror.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeMirror.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeMirror";
+			};
+			name = Debug;
+		};
+		500000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.timemirror.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeMirror.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeMirror";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		200000000000000000000001 /* Build configuration list for PBXProject "TimeMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500000000000000000000001 /* Debug */,
+				500000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200000000000000000000002 /* Build configuration list for PBXNativeTarget "TimeMirror" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500000000000000000000003 /* Debug */,
+				500000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200000000000000000000003 /* Build configuration list for PBXNativeTarget "TimeMirrorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500000000000000000000005 /* Debug */,
+				500000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000000000 /* Project object */;
+}
