@@ -87,6 +87,57 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             | tee "$RUNNER_TEMP/time-mirror-tests.log"
 
+      - name: Package Appetize browser preview
+        shell: bash
+        run: |
+          app_path="$RUNNER_TEMP/TimeMirrorDerivedData/Build/Products/Debug-iphonesimulator/TimeMirror.app"
+          preview_path="$RUNNER_TEMP/TimeMirror.app.zip"
+
+          test -d "$app_path"
+          ditto -c -k --sequesterRsrc --keepParent "$app_path" "$preview_path"
+          ls -lh "$preview_path"
+
+      - name: Upload Appetize preview artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: time-mirror-appetize-preview-${{ github.run_number }}
+          path: ${{ runner.temp }}/TimeMirror.app.zip
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Publish preview to Appetize
+        if: github.event_name != 'pull_request'
+        shell: bash
+        env:
+          APPETIZE_API_TOKEN: ${{ secrets.APPETIZE_API_TOKEN }}
+        run: |
+          if [[ -z "${APPETIZE_API_TOKEN:-}" ]]; then
+            echo "APPETIZE_API_TOKEN is not configured; the preview artifact can still be uploaded manually."
+            exit 0
+          fi
+
+          response_path="$RUNNER_TEMP/appetize-response.json"
+          curl --fail-with-body --silent --show-error \
+            --request POST "https://api.appetize.io/v1/apps" \
+            --header "X-API-KEY: $APPETIZE_API_TOKEN" \
+            --form "file=@$RUNNER_TEMP/TimeMirror.app.zip" \
+            --form "platform=ios" \
+            --form "note=TimeMirror ${GITHUB_SHA}" \
+            --form "appPermissions.run=authenticated" \
+            > "$response_path"
+
+          public_key=$(python3 -c 'import json, sys; print(json.load(open(sys.argv[1])).get("publicKey", ""))' "$response_path")
+          if [[ -z "$public_key" ]]; then
+            echo "Appetize did not return a preview identifier."
+            cat "$response_path"
+            exit 1
+          fi
+
+          preview_url="https://appetize.io/app/$public_key"
+          echo "### Appetize browser preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "[Open TimeMirror in the browser simulator]($preview_url)" >> "$GITHUB_STEP_SUMMARY"
+          echo "Preview access requires signing in to the Appetize organization that owns the API token." >> "$GITHUB_STEP_SUMMARY"
+
       - name: Upload build and test diagnostics
         if: always()
         uses: actions/upload-artifact@v7
