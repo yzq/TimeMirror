@@ -131,9 +131,9 @@ struct TodayView: View {
         guard weeklyCoreTarget > 0 else { return "尚未设置本周核心时间预算。" }
         let ratio = weeklyCoreDuration / weeklyCoreTarget
         switch ratio {
-        case ..<0.7: "保持真实记录，不需要为了数字追赶。"
-        case ..<1: "本周计划正在接近你的预算。"
-        default: "已经达到本周预算，可以留意恢复节奏。"
+        case ..<0.7: return "保持真实记录，不需要为了数字追赶。"
+        case ..<1: return "本周计划正在接近你的预算。"
+        default: return "已经达到本周预算，可以留意恢复节奏。"
         }
     }
 
